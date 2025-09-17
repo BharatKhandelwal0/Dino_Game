@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dino Game — Bharat ka Version</title>
+  <!-- Font links for nice style -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-wrap" id="gameWrap">
+    <canvas id="c"></canvas>
+    <div class="ui">
+      <div class="score" id="score">Score: 0</div>
+      <div class="hi" id="hi">High: 0</div>
+    </div>
+    <div class="instructions">Press <b>Space / Up</b> to jump, <b>Down</b> to duck. Tap on mobile to jump.</div>
+    <div class="overlay" id="overlay" style="display:none;">
+      <div class="message" id="msgBox">
+        <div id="msgText">Game Over</div>
+        <div>
+          <button class="btn" id="restartBtn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
